@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/particules.js"></script>
+    <script defer type="text/javascript" src="assets/js/SorteioAurora.js"></script>
+    <script defer src="assets/js/Hud.js"></script>
+    <link rel="stylesheet" href="assets/css/StyleHud.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.2/xlsx.full.min.js"></script>
+
+    <title>Sorteio</title>
+</head>
+<body>
+    <div class="particle-container"></div>
+    <div class="container">
+        <h2>Sorteio</h2>
+        <div class="input-group">
+            <div class="input-field">
+                <label for="max">Participantes:</label>
+                <input id="max"type="number" name="max">
+            </div>
+        </div>
+        <button id="generate" disabled>Girar</button>
+        <p id="output"></p>
+        <div id="result">
+        <span></span></div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <span class="menu-icon">&#8285;&#8285;&#8285;</span>
+        <div class="dropdown-content" id="dropdown">
+            <input type="file" id="fileInput">
+            <img id="downloadResults" disabled src="assets/Download.png" alt="Download" style="cursor: pointer;" class="corner-image-download">
+        </div>
+    </div>
+    
+</body>
+</html>
